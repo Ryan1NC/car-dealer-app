@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>550</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>550</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Составление заказа</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>30</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Составление заказа</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>55</y>
+      <width>531</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetNoConstraint</enum>
+     </property>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="car_choose"/>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>0 у.е.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Доп. опции:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="car_choose_2"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Цвет:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Цена:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QCheckBox" name="option0">
+         <property name="text">
+          <string>Комплект зимних шин</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="option1">
+         <property name="text">
+          <string>Бронеплёнка</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="option2">
+         <property name="text">
+          <string>Литые диски</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="option3">
+         <property name="text">
+          <string>Парктроники</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Модель машины:</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="make_an_order">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>290</y>
+      <width>241</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Сделать заказ</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
