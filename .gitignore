@@ -1,0 +1,2 @@
+src/ui/generated_ui/*.py
+__pycache__/
