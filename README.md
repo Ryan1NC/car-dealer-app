@@ -6,4 +6,5 @@
 Были настроены actions для репозитория. Воркфлоу main.yml устанавливает необходимые зависимости и прогоняет тесты из файла test_main.py. Воркфлоу build.yml с помощью pyinstaller компилирует exe файл, который можно найти в Actions, вкладка с артефактами.
 
 !\[Tests\](https://github.com/Ryan1NC/car-dealer-app/actions/workflows/main.yml/badge.svg)
+
 !\[Build\](https://github.com/Ryan1NC/car-dealer-app/actions/workflows/build.yml/badge.svg)
