@@ -27,7 +27,7 @@ jobs:
           pyinstaller --onefile --name car-dealership src/main.py
 
       - name: Upload exe
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: car-dealership
           path: dist/car-dealership.exe
