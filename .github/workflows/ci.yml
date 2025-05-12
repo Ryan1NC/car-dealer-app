@@ -35,3 +35,7 @@ jobs:
       - name: MS SQL stuff
         run: |
           /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $SA_PASSWORD -Q "SELECT 1"
+
+        name: Run tests
+        run: |
+          pytest
