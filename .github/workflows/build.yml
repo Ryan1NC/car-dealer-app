@@ -1,0 +1,33 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install pyinstaller
+          pip install -r requirements.txt
+
+      - name: Build exe
+        run: |
+          pyinstaller --onefile --name car-dealership src/main.py
+
+      - name: Upload exe
+        uses: actions/upload-artifact@v3
+        with:
+          name: car-dealership
+          path: dist/car-dealership.exe
